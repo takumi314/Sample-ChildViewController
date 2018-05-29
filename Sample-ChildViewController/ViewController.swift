@@ -22,7 +22,9 @@ class ViewController: UIViewController {
 
 
     @IBAction func onTappedNext(_ sender: UIButton) {
-
+        let storyboard = UIStoryboard(name: "First", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: FirstViewController.identidier)
+        present(vc, animated: true, completion: nil)
     }
     
 }
