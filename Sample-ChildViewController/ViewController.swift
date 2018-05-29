@@ -21,5 +21,9 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func onTappedNext(_ sender: UIButton) {
+
+    }
+    
 }
 
