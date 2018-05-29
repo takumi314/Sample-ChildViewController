@@ -14,6 +14,7 @@
 		E1CDF7BE20BD9FA100213321 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1CDF7BC20BD9FA100213321 /* LaunchScreen.storyboard */; };
 		E1CDF7C920BD9FA200213321 /* Sample_ChildViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CDF7C820BD9FA200213321 /* Sample_ChildViewControllerTests.swift */; };
 		E1CDF7D420BDA44900213321 /* First.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1CDF7D320BDA44900213321 /* First.storyboard */; };
+		E1CDF7D620BDA54400213321 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CDF7D520BDA54400213321 /* FirstViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		E1CDF7C820BD9FA200213321 /* Sample_ChildViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample_ChildViewControllerTests.swift; sourceTree = "<group>"; };
 		E1CDF7CA20BD9FA200213321 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1CDF7D320BDA44900213321 /* First.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = First.storyboard; sourceTree = "<group>"; };
+		E1CDF7D520BDA54400213321 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +83,12 @@
 			children = (
 				E1CDF7B320BD9FA100213321 /* AppDelegate.swift */,
 				E1CDF7B520BD9FA100213321 /* ViewController.swift */,
+				E1CDF7D520BDA54400213321 /* FirstViewController.swift */,
 				E1CDF7B720BD9FA100213321 /* Main.storyboard */,
+				E1CDF7D320BDA44900213321 /* First.storyboard */,
 				E1CDF7BA20BD9FA100213321 /* Assets.xcassets */,
 				E1CDF7BC20BD9FA100213321 /* LaunchScreen.storyboard */,
 				E1CDF7BF20BD9FA100213321 /* Info.plist */,
-				E1CDF7D320BDA44900213321 /* First.storyboard */,
 			);
 			path = "Sample-ChildViewController";
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1CDF7D620BDA54400213321 /* FirstViewController.swift in Sources */,
 				E1CDF7B620BD9FA100213321 /* ViewController.swift in Sources */,
 				E1CDF7B420BD9FA100213321 /* AppDelegate.swift in Sources */,
 			);
