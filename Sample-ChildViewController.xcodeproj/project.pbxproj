@@ -18,6 +18,7 @@
 		E1CDF7DB20BDA80D00213321 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CDF7DA20BDA80D00213321 /* Identifiable.swift */; };
 		E1CDF7DD20BDADF400213321 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CDF7DC20BDADF400213321 /* LoadingViewController.swift */; };
 		E1CDF7DF20BDAEEE00213321 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CDF7DE20BDAEEE00213321 /* UIViewControllerExtension.swift */; };
+		E1CDF7E120BDB5FE00213321 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CDF7E020BDB5FE00213321 /* ErrorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		E1CDF7DA20BDA80D00213321 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
 		E1CDF7DC20BDADF400213321 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		E1CDF7DE20BDAEEE00213321 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		E1CDF7E020BDB5FE00213321 /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				E1CDF7DA20BDA80D00213321 /* Identifiable.swift */,
 				E1CDF7DC20BDADF400213321 /* LoadingViewController.swift */,
 				E1CDF7DE20BDAEEE00213321 /* UIViewControllerExtension.swift */,
+				E1CDF7E020BDB5FE00213321 /* ErrorViewController.swift */,
 			);
 			path = "Sample-ChildViewController";
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1CDF7E120BDB5FE00213321 /* ErrorViewController.swift in Sources */,
 				E1CDF7D620BDA54400213321 /* FirstViewController.swift in Sources */,
 				E1CDF7DB20BDA80D00213321 /* Identifiable.swift in Sources */,
 				E1CDF7DF20BDAEEE00213321 /* UIViewControllerExtension.swift in Sources */,
