@@ -28,9 +28,30 @@ class FirstViewController: UIViewController {
 
         // Loading
         DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+            [weak self] in
             loadingViewController.remove()
             print("stop!")
+
+            // show error
+            self?.handle()
         }
+    }
+
+    func handle() {
+        let errorViewController
+            = UIStoryboard(name: "Error", bundle: nil).instantiateViewController(
+                withIdentifier: ErrorViewController.identidier
+            ) as! ErrorViewController
+
+        errorViewController.view.backgroundColor = .red
+
+        // set a reloadHandler closure that gets called
+        // whenever the reload button is tapped
+        errorViewController.reloadHandler = { [weak self] in
+            self?.loadItems()
+        }
+
+        add(errorViewController)
     }
 
 
