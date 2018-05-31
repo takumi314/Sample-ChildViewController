@@ -20,6 +20,10 @@ class ErrorViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    @IBAction func onTappedReloading(_ sender: UIButton) {
+        reloadHandler()
+    }
+
 }
 
 
