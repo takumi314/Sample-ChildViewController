@@ -12,14 +12,25 @@ class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .gray
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        loadItems()
+    }
 
     func loadItems() {
         let loadingViewController = LoadingViewController()
         add(loadingViewController)
+        print("start ...")
 
-        // Loading ...
+        // Loading
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+            loadingViewController.remove()
+            print("stop!")
+        }
     }
 
 
