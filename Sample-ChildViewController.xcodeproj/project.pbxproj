@@ -13,6 +13,13 @@
 		E1CDF7BB20BD9FA100213321 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1CDF7BA20BD9FA100213321 /* Assets.xcassets */; };
 		E1CDF7BE20BD9FA100213321 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1CDF7BC20BD9FA100213321 /* LaunchScreen.storyboard */; };
 		E1CDF7C920BD9FA200213321 /* Sample_ChildViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CDF7C820BD9FA200213321 /* Sample_ChildViewControllerTests.swift */; };
+		E1CDF7D620BDA54400213321 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CDF7D520BDA54400213321 /* FirstViewController.swift */; };
+		E1CDF7D920BDA61D00213321 /* First.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1CDF7D720BDA61D00213321 /* First.storyboard */; };
+		E1CDF7DB20BDA80D00213321 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CDF7DA20BDA80D00213321 /* Identifiable.swift */; };
+		E1CDF7DD20BDADF400213321 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CDF7DC20BDADF400213321 /* LoadingViewController.swift */; };
+		E1CDF7DF20BDAEEE00213321 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CDF7DE20BDAEEE00213321 /* UIViewControllerExtension.swift */; };
+		E1CDF7E120BDB5FE00213321 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CDF7E020BDB5FE00213321 /* ErrorViewController.swift */; };
+		E1CDF7E320C03CD100213321 /* Error.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1CDF7E220C03CD100213321 /* Error.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,13 @@
 		E1CDF7C420BD9FA200213321 /* Sample-ChildViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sample-ChildViewControllerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1CDF7C820BD9FA200213321 /* Sample_ChildViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample_ChildViewControllerTests.swift; sourceTree = "<group>"; };
 		E1CDF7CA20BD9FA200213321 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1CDF7D520BDA54400213321 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		E1CDF7D820BDA61D00213321 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/First.storyboard; sourceTree = "<group>"; };
+		E1CDF7DA20BDA80D00213321 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
+		E1CDF7DC20BDADF400213321 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		E1CDF7DE20BDAEEE00213321 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		E1CDF7E020BDB5FE00213321 /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
+		E1CDF7E220C03CD100213321 /* Error.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Error.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +93,17 @@
 			children = (
 				E1CDF7B320BD9FA100213321 /* AppDelegate.swift */,
 				E1CDF7B520BD9FA100213321 /* ViewController.swift */,
+				E1CDF7D520BDA54400213321 /* FirstViewController.swift */,
 				E1CDF7B720BD9FA100213321 /* Main.storyboard */,
 				E1CDF7BA20BD9FA100213321 /* Assets.xcassets */,
 				E1CDF7BC20BD9FA100213321 /* LaunchScreen.storyboard */,
 				E1CDF7BF20BD9FA100213321 /* Info.plist */,
+				E1CDF7D720BDA61D00213321 /* First.storyboard */,
+				E1CDF7DA20BDA80D00213321 /* Identifiable.swift */,
+				E1CDF7DC20BDADF400213321 /* LoadingViewController.swift */,
+				E1CDF7DE20BDAEEE00213321 /* UIViewControllerExtension.swift */,
+				E1CDF7E020BDB5FE00213321 /* ErrorViewController.swift */,
+				E1CDF7E220C03CD100213321 /* Error.storyboard */,
 			);
 			path = "Sample-ChildViewController";
 			sourceTree = "<group>";
@@ -182,6 +203,8 @@
 				E1CDF7BE20BD9FA100213321 /* LaunchScreen.storyboard in Resources */,
 				E1CDF7BB20BD9FA100213321 /* Assets.xcassets in Resources */,
 				E1CDF7B920BD9FA100213321 /* Main.storyboard in Resources */,
+				E1CDF7E320C03CD100213321 /* Error.storyboard in Resources */,
+				E1CDF7D920BDA61D00213321 /* First.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +222,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1CDF7E120BDB5FE00213321 /* ErrorViewController.swift in Sources */,
+				E1CDF7D620BDA54400213321 /* FirstViewController.swift in Sources */,
+				E1CDF7DB20BDA80D00213321 /* Identifiable.swift in Sources */,
+				E1CDF7DF20BDAEEE00213321 /* UIViewControllerExtension.swift in Sources */,
+				E1CDF7DD20BDADF400213321 /* LoadingViewController.swift in Sources */,
 				E1CDF7B620BD9FA100213321 /* ViewController.swift in Sources */,
 				E1CDF7B420BD9FA100213321 /* AppDelegate.swift in Sources */,
 			);
@@ -237,6 +265,14 @@
 				E1CDF7BD20BD9FA100213321 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E1CDF7D720BDA61D00213321 /* First.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1CDF7D820BDA61D00213321 /* Base */,
+			);
+			name = First.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
