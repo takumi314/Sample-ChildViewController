@@ -10,11 +10,48 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+
+    @IBOutlet weak var errorContainerView: UIView!
+    
+    @IBOutlet weak var loadingContainerView: UIView!
+    
+    @IBOutlet weak var firstContainerView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        errorContainerView.isHidden = true
+        loadingContainerView.isHidden = true
+        firstContainerView.isHidden = true
+
+        loadItems()
     }
+
+    func loadItems() {
+        let loadingViewController = LoadingViewController()
+        loadingViewController.view.backgroundColor = .gray
+
+        loadingContainerView.addSubview(loadingViewController.view)
+
+        addChildViewController(loadingViewController)
+        loadingViewController.view.frame = loadingContainerView.frame
+
+        self.view.addSubview(loadingViewController.view)
+        loadingViewController.didMove(toParentViewController: self)
+
+        add(loadingViewController)
+        print("start ...")
+
+        // Loading
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+//            [weak self] in
+//            loadingViewController.remove()
+//            print("stop!")
+//
+//            // show error
+//        }
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
