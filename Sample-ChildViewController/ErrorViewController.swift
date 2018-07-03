@@ -24,6 +24,10 @@ class ErrorViewController: UIViewController {
         reloadHandler()
     }
 
+    @IBAction func onTappedBacking(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+
 }
 
 
