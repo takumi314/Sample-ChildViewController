@@ -10,9 +10,10 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
+    private let transition = OrgTransition()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .gray
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -23,6 +24,15 @@ class FirstViewController: UIViewController {
 
     func loadItems() {
         let loadingViewController = LoadingViewController()
+        loadingViewController.modalPresentationStyle = .overCurrentContext
+
+        // UIVisualEffectViewを生成する
+        let visualEffectView = UIVisualEffectView(frame: loadingViewController.view.frame)
+        // エフェクトの種類を設定
+        visualEffectView.effect = UIBlurEffect(style: .light)
+
+        loadingViewController.view.insertSubview(visualEffectView, at: 0)
+        
         add(loadingViewController)
         print("start ...")
 
