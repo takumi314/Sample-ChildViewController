@@ -26,6 +26,16 @@ class ViewController: UIViewController {
         let vc = storyboard.instantiateViewController(withIdentifier: FirstViewController.identidier)
         present(vc, animated: true, completion: nil)
     }
-    
+
+
+    @IBAction func onTappedSecond(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Second", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: SecondViewController.identidier)
+        vc.modalPresentationStyle = .overCurrentContext
+        vc.modalTransitionStyle = .crossDissolve
+        present(vc, animated: true, completion: nil)
+    }
+
+
 }
 
