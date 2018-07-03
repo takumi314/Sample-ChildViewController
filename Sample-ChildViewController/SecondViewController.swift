@@ -42,14 +42,13 @@ class SecondViewController: UIViewController {
         add(loadingViewController)
         print("start ...")
 
-        // Loading
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
-//            [weak self] in
-//            loadingViewController.remove()
-//            print("stop!")
-//
-//            // show error
-//        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+            [weak self] in
+            loadingViewController.remove()
+            print("stop!")
+
+            // show error
+        }
     }
 
 
